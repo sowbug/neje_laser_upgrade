@@ -84,6 +84,9 @@ But you can fix it.
    is enabled, and watch your laser engraver move and cut more precisely than
    ever before!
 
+Note that I ended up setting $100/$101 (X/Y steps per mm) to 40 to get the scale
+of the cuts to match what I drew in my application. Yours might be different.
+
 If you ever want to go back, remove the jumper, fix the broken trace, and flash
 the .hex included in the .rar download link at the bottom of
 [the NEJE page](http://wiki.nejetool.com/doku.php?id=nejelaser_master).
