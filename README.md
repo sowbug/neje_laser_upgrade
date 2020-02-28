@@ -10,8 +10,8 @@ $32) that makes your engraver perform better. You can upgrade the firmware to
 sort of works, except (1) it won't let you enable Laser Mode, and (2) the laser
 doesn't turn on anymore.
 
-This document shows you how to fix this problem and upgrade your NEJE laser
-engraver to stock (official build) Grbl v1.1h.
+This page shows you how to fix this problem and upgrade your NEJE laser engraver
+to stock (official build) Grbl v1.1h.
 
 ## The problem
 
@@ -54,14 +54,11 @@ But you can fix it.
 
 1. Remove the board. Unscrew the screws and pull off the cables.
 
-2. Compare to this photo. It should look similar:
-
-![NEJE board](img/IMG_20200226_194045.jpg)
+2. Compare to this photo. It should look similar.
+   ![NEJE board](img/IMG_20200226_194045.jpg)
 
 3. Find the trace leading from the atmega328p's D12 pin (which in AVR land is
-   called pin 16).
-
-![328p close-up, pin 16](img/IMG_20200226_194448.jpg)
+   called pin 16). ![328p close-up, pin 16](img/IMG_20200226_194448.jpg)
 
 4. With your knife, cut the trace leading from pin 16. Use a continuity tester
    to verify that the trace really is broken. An easy way to test is to put one
@@ -72,8 +69,7 @@ But you can fix it.
    part of a diode leg, but you might just choose to thread a wire through the
    two and twist it tightly if you don't have soldering equipment. Connecting
    those two holes is the same as connecting the laser to pin 15 (D11).
-
-![Modified NEJE board](img/IMG_20200227_172709.jpg)
+   ![Modified NEJE board](img/IMG_20200227_172709.jpg)
 
 6. Put the laser engraver back together again. Plug it into your computer.
 
