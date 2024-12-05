@@ -80,6 +80,9 @@ But you can fix it.
 
 `avrdude.exe -p m328p -c arduino -p /dev/ttyUSB0 -b 57600 -U flash:w:"grbl_v1.1h.20190825.hex":a`
 
+(Thanks to @TylonHH for providing an example that worked on Windows:
+`c:\NEJE\cache\avrdude -u -c arduino -p m328p -P COM10 -b 58000 -U flash:w:"C:\TEMP\avrdude-v8.0-windows-x64\grbl_v1.1h.20190825.hex":a`)
+
 9. Fire up your favorite laser-engraver application, make sure Laser Mode ($32)
    is enabled, and watch your laser engraver move and cut more precisely than
    ever before!
